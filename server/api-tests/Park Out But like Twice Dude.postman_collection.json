@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "559485ad-cdc9-4aa4-9392-3f3d539c9142",
+		"name": "Park Out But like Twice Dude",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Part 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://qi2zwrrpuk.execute-api.us-east-1.amazonaws.com/testing/park-in?VIN=123",
+					"protocol": "https",
+					"host": [
+						"qi2zwrrpuk",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"testing",
+						"park-in"
+					],
+					"query": [
+						{
+							"key": "VIN",
+							"value": "123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Part 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://qi2zwrrpuk.execute-api.us-east-1.amazonaws.com/testing/park-out?VIN=123",
+					"protocol": "https",
+					"host": [
+						"qi2zwrrpuk",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"testing",
+						"park-out"
+					],
+					"query": [
+						{
+							"key": "VIN",
+							"value": "123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Part 3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "d22e785e-f8b7-4889-a320-e05339efb13b",
+						"exec": [
+							"pm.test(\"We get a correct error message\", function() {",
+							"    pm.response.to.have.jsonBody({",
+							"        \"error\": \"This VIN is not in the lot.\"",
+							"    })",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://qi2zwrrpuk.execute-api.us-east-1.amazonaws.com/testing/park-out?VIN=123",
+					"protocol": "https",
+					"host": [
+						"qi2zwrrpuk",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"testing",
+						"park-out"
+					],
+					"query": [
+						{
+							"key": "VIN",
+							"value": "123"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

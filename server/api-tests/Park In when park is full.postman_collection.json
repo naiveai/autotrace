@@ -1,0 +1,732 @@
+{
+	"info": {
+		"_postman_id": "4e29f968-b34d-4332-8e0e-3ff58070afb1",
+		"name": "Park In when park is full",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Part 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://qi2zwrrpuk.execute-api.us-east-1.amazonaws.com/testing/park-in?VIN=1",
+					"protocol": "https",
+					"host": [
+						"qi2zwrrpuk",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"testing",
+						"park-in"
+					],
+					"query": [
+						{
+							"key": "VIN",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Part 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://qi2zwrrpuk.execute-api.us-east-1.amazonaws.com/testing/park-in?VIN=2",
+					"protocol": "https",
+					"host": [
+						"qi2zwrrpuk",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"testing",
+						"park-in"
+					],
+					"query": [
+						{
+							"key": "VIN",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Part 3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://qi2zwrrpuk.execute-api.us-east-1.amazonaws.com/testing/park-in?VIN=3",
+					"protocol": "https",
+					"host": [
+						"qi2zwrrpuk",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"testing",
+						"park-in"
+					],
+					"query": [
+						{
+							"key": "VIN",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Part 4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://qi2zwrrpuk.execute-api.us-east-1.amazonaws.com/testing/park-in?VIN=4",
+					"protocol": "https",
+					"host": [
+						"qi2zwrrpuk",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"testing",
+						"park-in"
+					],
+					"query": [
+						{
+							"key": "VIN",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Part 5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://qi2zwrrpuk.execute-api.us-east-1.amazonaws.com/testing/park-in?VIN=5",
+					"protocol": "https",
+					"host": [
+						"qi2zwrrpuk",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"testing",
+						"park-in"
+					],
+					"query": [
+						{
+							"key": "VIN",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Part 6",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://qi2zwrrpuk.execute-api.us-east-1.amazonaws.com/testing/park-in?VIN=6",
+					"protocol": "https",
+					"host": [
+						"qi2zwrrpuk",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"testing",
+						"park-in"
+					],
+					"query": [
+						{
+							"key": "VIN",
+							"value": "6"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Part 7",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://qi2zwrrpuk.execute-api.us-east-1.amazonaws.com/testing/park-in?VIN=7",
+					"protocol": "https",
+					"host": [
+						"qi2zwrrpuk",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"testing",
+						"park-in"
+					],
+					"query": [
+						{
+							"key": "VIN",
+							"value": "7"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Part 8",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://qi2zwrrpuk.execute-api.us-east-1.amazonaws.com/testing/park-in?VIN=8",
+					"protocol": "https",
+					"host": [
+						"qi2zwrrpuk",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"testing",
+						"park-in"
+					],
+					"query": [
+						{
+							"key": "VIN",
+							"value": "8"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Part 9",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://qi2zwrrpuk.execute-api.us-east-1.amazonaws.com/testing/park-in?VIN=9",
+					"protocol": "https",
+					"host": [
+						"qi2zwrrpuk",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"testing",
+						"park-in"
+					],
+					"query": [
+						{
+							"key": "VIN",
+							"value": "9"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Part 10",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://qi2zwrrpuk.execute-api.us-east-1.amazonaws.com/testing/park-in?VIN=10",
+					"protocol": "https",
+					"host": [
+						"qi2zwrrpuk",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"testing",
+						"park-in"
+					],
+					"query": [
+						{
+							"key": "VIN",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Part 11",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://qi2zwrrpuk.execute-api.us-east-1.amazonaws.com/testing/park-in?VIN=11",
+					"protocol": "https",
+					"host": [
+						"qi2zwrrpuk",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"testing",
+						"park-in"
+					],
+					"query": [
+						{
+							"key": "VIN",
+							"value": "11"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Part 12",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://qi2zwrrpuk.execute-api.us-east-1.amazonaws.com/testing/park-in?VIN=12",
+					"protocol": "https",
+					"host": [
+						"qi2zwrrpuk",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"testing",
+						"park-in"
+					],
+					"query": [
+						{
+							"key": "VIN",
+							"value": "12"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Part 13",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://qi2zwrrpuk.execute-api.us-east-1.amazonaws.com/testing/park-in?VIN=13",
+					"protocol": "https",
+					"host": [
+						"qi2zwrrpuk",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"testing",
+						"park-in"
+					],
+					"query": [
+						{
+							"key": "VIN",
+							"value": "13"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Part 14",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://qi2zwrrpuk.execute-api.us-east-1.amazonaws.com/testing/park-in?VIN=14",
+					"protocol": "https",
+					"host": [
+						"qi2zwrrpuk",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"testing",
+						"park-in"
+					],
+					"query": [
+						{
+							"key": "VIN",
+							"value": "14"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Part 15",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://qi2zwrrpuk.execute-api.us-east-1.amazonaws.com/testing/park-in?VIN=15",
+					"protocol": "https",
+					"host": [
+						"qi2zwrrpuk",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"testing",
+						"park-in"
+					],
+					"query": [
+						{
+							"key": "VIN",
+							"value": "15"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Part 16",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://qi2zwrrpuk.execute-api.us-east-1.amazonaws.com/testing/park-in?VIN=16",
+					"protocol": "https",
+					"host": [
+						"qi2zwrrpuk",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"testing",
+						"park-in"
+					],
+					"query": [
+						{
+							"key": "VIN",
+							"value": "16"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Part 17",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://qi2zwrrpuk.execute-api.us-east-1.amazonaws.com/testing/park-in?VIN=17",
+					"protocol": "https",
+					"host": [
+						"qi2zwrrpuk",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"testing",
+						"park-in"
+					],
+					"query": [
+						{
+							"key": "VIN",
+							"value": "17"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Part 18",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://qi2zwrrpuk.execute-api.us-east-1.amazonaws.com/testing/park-in?VIN=18",
+					"protocol": "https",
+					"host": [
+						"qi2zwrrpuk",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"testing",
+						"park-in"
+					],
+					"query": [
+						{
+							"key": "VIN",
+							"value": "18"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Part 19",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://qi2zwrrpuk.execute-api.us-east-1.amazonaws.com/testing/park-in?VIN=19",
+					"protocol": "https",
+					"host": [
+						"qi2zwrrpuk",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"testing",
+						"park-in"
+					],
+					"query": [
+						{
+							"key": "VIN",
+							"value": "19"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Part 20",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "62eab1a0-5f9a-41d0-96bb-e72309f900ff",
+						"exec": [
+							"pm.test(\"Will work correctly\", function() {",
+							"    pm.response.to.have.status(201);",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://qi2zwrrpuk.execute-api.us-east-1.amazonaws.com/testing/park-in?VIN=20",
+					"protocol": "https",
+					"host": [
+						"qi2zwrrpuk",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"testing",
+						"park-in"
+					],
+					"query": [
+						{
+							"key": "VIN",
+							"value": "20"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Part 21 - Going Over The Limit",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e80fe4aa-8989-4d4a-9dec-4236c9958447",
+						"exec": [
+							"pm.test(\"We get a correct error message.\", function() {",
+							"    pm.response.to.have.jsonBody({",
+							"        \"error\": \"This park is full.\"",
+							"    })",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://qi2zwrrpuk.execute-api.us-east-1.amazonaws.com/testing/park-in?VIN=21",
+					"protocol": "https",
+					"host": [
+						"qi2zwrrpuk",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"testing",
+						"park-in"
+					],
+					"query": [
+						{
+							"key": "VIN",
+							"value": "21"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

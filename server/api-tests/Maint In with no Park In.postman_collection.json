@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "7266c8d2-5ea2-4193-8902-cc51500872a3",
+		"name": "Maint In with no Park In",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Part 1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "02e7f83f-730b-4c8a-aa11-bdce3f9a4ded",
+						"exec": [
+							"pm.test(\"We get a correct error message\", function () {",
+							"    pm.response.to.have.jsonBody({",
+							"        \"error\": \"This VIN does not exist.\"",
+							"    })",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://qi2zwrrpuk.execute-api.us-east-1.amazonaws.com/testing/maint-in?VIN=123",
+					"protocol": "https",
+					"host": [
+						"qi2zwrrpuk",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"testing",
+						"maint-in"
+					],
+					"query": [
+						{
+							"key": "VIN",
+							"value": "123"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

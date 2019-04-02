@@ -1,0 +1,140 @@
+{
+	"info": {
+		"_postman_id": "1f02571b-f82c-44c6-9c7f-99852f44395d",
+		"name": "Move to Not Empty",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Part 1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "dc2c56eb-2b60-4134-9225-d162ab7369a8",
+						"exec": [
+							"pm.globals.set(\"slot\", pm.response.json().slot);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://qi2zwrrpuk.execute-api.us-east-1.amazonaws.com/testing/park-in?VIN=123",
+					"protocol": "https",
+					"host": [
+						"qi2zwrrpuk",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"testing",
+						"park-in"
+					],
+					"query": [
+						{
+							"key": "VIN",
+							"value": "123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Part 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://qi2zwrrpuk.execute-api.us-east-1.amazonaws.com/testing/park-in?VIN=456",
+					"protocol": "https",
+					"host": [
+						"qi2zwrrpuk",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"testing",
+						"park-in"
+					],
+					"query": [
+						{
+							"key": "VIN",
+							"value": "456"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Part 3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "fd955310-487c-4242-a330-26b48d5f2c91",
+						"exec": [
+							"pm.test(\"We get a correct error message\", function () {",
+							"    pm.response.to.have.jsonBody({",
+							"        \"error\": \"Slot ${pm.globals.get('slot')} is not empty\"",
+							"    })",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://qi2zwrrpuk.execute-api.us-east-1.amazonaws.com/testing/move?VIN=456&newSlot={{slot}}",
+					"protocol": "https",
+					"host": [
+						"qi2zwrrpuk",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"testing",
+						"move"
+					],
+					"query": [
+						{
+							"key": "VIN",
+							"value": "456"
+						},
+						{
+							"key": "newSlot",
+							"value": "{{slot}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

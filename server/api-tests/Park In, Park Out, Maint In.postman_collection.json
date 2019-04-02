@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "1478d08e-8903-4f95-8c9d-6af24dde4d35",
+		"name": "Park In, Park Out, Maint In",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Part 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://qi2zwrrpuk.execute-api.us-east-1.amazonaws.com/testing/park-in?VIN=123",
+					"protocol": "https",
+					"host": [
+						"qi2zwrrpuk",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"testing",
+						"park-in"
+					],
+					"query": [
+						{
+							"key": "VIN",
+							"value": "123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Part 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://qi2zwrrpuk.execute-api.us-east-1.amazonaws.com/testing/park-out?VIN=123",
+					"protocol": "https",
+					"host": [
+						"qi2zwrrpuk",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"testing",
+						"park-out"
+					],
+					"query": [
+						{
+							"key": "VIN",
+							"value": "123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Part 3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "20a5ad00-adf3-4f7d-9643-09474a55eb42",
+						"exec": [
+							"pm.test(\"We get a correct error\", function() {",
+							"    pm.response.to.have.jsonBody({",
+							"        \"error\": \"This VIN is parked out.\"",
+							"    })",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://qi2zwrrpuk.execute-api.us-east-1.amazonaws.com/testing/maint-in?VIN=123",
+					"protocol": "https",
+					"host": [
+						"qi2zwrrpuk",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"testing",
+						"maint-in"
+					],
+					"query": [
+						{
+							"key": "VIN",
+							"value": "123"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

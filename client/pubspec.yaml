@@ -16,6 +16,8 @@ dependencies:
 
   barcode_scan: ^1.0.0
 
+  auto_size_text: ^1.1.2
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

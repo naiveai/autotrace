@@ -22,9 +22,12 @@ class _HomePageState extends State<HomePage> {
     }
 
     final responseRaw = await http.get(
-        'https://qi2zwrrpuk.execute-api.us-east-1.amazonaws.com/testing/$action?VIN=$vin');
+        'https://qi2zwrrpuk.execute-api.us-east-1.amazonaws.com/testing/$action?VIN=$vin',
+        headers: {'x-api-key': 'Alb1A689Ls3yfkef60CpA5HJnat6ry8J2pY4TUQX'});
 
     var response;
+
+    debugPrint(responseRaw.body);
 
     try {
       response = json.decode(responseRaw.body);

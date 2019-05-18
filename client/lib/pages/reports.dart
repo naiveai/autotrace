@@ -86,7 +86,8 @@ class _ParkedVehiclesReportState extends State<_ParkedVehiclesReport> {
   void initState() {
     super.initState();
     vehiclesFuture = http.get(
-        'https://qi2zwrrpuk.execute-api.us-east-1.amazonaws.com/testing/list-vehicles');
+        'https://qi2zwrrpuk.execute-api.us-east-1.amazonaws.com/testing/list-vehicles',
+        headers: {'x-api-key': 'Alb1A689Ls3yfkef60CpA5HJnat6ry8J2pY4TUQX'});
   }
 
   @override

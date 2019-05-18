@@ -27,8 +27,6 @@ class _HomePageState extends State<HomePage> {
 
     var response;
 
-    debugPrint(responseRaw.body);
-
     try {
       response = json.decode(responseRaw.body);
     } catch (e) {

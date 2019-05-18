@@ -128,7 +128,7 @@ class _ParkedVehiclesReportState extends State<_ParkedVehiclesReport> {
               );
             }
           } else if (snapshot.hasError) {
-            debugPrint("Oh no");
+            debugPrint("${snapshot.error}");
           }
 
           return Center(
